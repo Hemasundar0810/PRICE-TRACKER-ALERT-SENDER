@@ -93,6 +93,8 @@ def track_price(url,target_price,check_interval,to_email,from_email,from_passwor
       else:
         print("price not dropped yet")
         print("checking again in 60 seconds")
+        st.text("price not dropped yet")
+        st.text("checking again in 60 seconds")
         time.sleep(check_interval)
     else:
       print("failed to retrieve price.Rechecking....")
